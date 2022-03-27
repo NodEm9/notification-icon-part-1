@@ -24,48 +24,48 @@
 
 
 // let userOput = document.getElementById('output')
-let inputEntry = document.getElementById('txt');
-let btn = document.getElementById('show')
-inputEntry.setAttribute('class', 'userEntry')
+// let inputEntry = document.getElementById('txt');
+// let btn = document.getElementById('show')
+// inputEntry.setAttribute('class', 'userEntry')
 
-const indexOutput = [];
-let grd;
-let ctx;
-
-
-let c = document.getElementById('canvas');
-ctx = c.getContext("2d");
-
-grd = ctx.createLinearGradient(10, 150, 200, 0);
-grd.addColorStop(0, "goldenrod");
-grd.addColorStop(1, "orangered");
+// const indexOutput = [];
+// let grd;
+// let ctx;
 
 
-function draw() {
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.beginPath()
-// ctx.arc(90, 50, 40, 0, 2 * Math.PI)
-ctx.fillRect(80, 10, 500, 500);  
-ctx.fill()
-ctx.stroke()
-}
-draw()
+// let c = document.getElementById('canvas');
+// ctx = c.getContext("2d");
+
+// grd = ctx.createLinearGradient(10, 150, 200, 0);
+// grd.addColorStop(0, "goldenrod");
+// grd.addColorStop(1, "orangered");
 
 
-const createUserInput = (e) => {
-      if(e) {
-        indexOutput.push(inputEntry.value)
-          ctx.fillStyle = 'white'
-          ctx.font = "30px Arial san-serif";
-          ctx.fillText(indexOutput, 190, 50)
-          inputEntry.value  = ''
-        //   userOput.textContent = `${indexOutput}`
-      }
+// function draw() {
+// // Fill with gradient
+// ctx.fillStyle = grd;
+// ctx.beginPath()
+// // ctx.arc(90, 50, 40, 0, 2 * Math.PI)
+// ctx.fillRect(80, 10, 500, 500);  
+// ctx.fill()
+// ctx.stroke()
+// }
+// draw()
+
+
+// const createUserInput = (e) => {
+//       if(e) {
+//         indexOutput.push(inputEntry.value)
+//           ctx.fillStyle = 'white'
+//           ctx.font = "30px Arial san-serif";
+//           ctx.fillText(indexOutput, 190, 50)
+//           inputEntry.value  = ''
+//         //   userOput.textContent = `${indexOutput}`
+//       }
              
-}
+// }
 
-btn.addEventListener('click', createUserInput)
+// btn.addEventListener('click', createUserInput)
 
 
 
@@ -184,29 +184,50 @@ btn.addEventListener('click', createUserInput)
 
 
 
-var startTime = -1;
-var animationLength = 2000; // Animation length in milliseconds
+// var startTime = -1;
+// var animationLength = 2000; // Animation length in milliseconds
 
-function doAnimation(timestamp) {
-  // Calculate animation progress
-  var progress = 0;
+// function doAnimation(timestamp) {
+//   // Calculate animation progress
+//   var progress = 0;
 
-  if (startTime < 0) {
-      startTime = timestamp;
-  } else {
-      progress = timestamp - startTime;
-  }
+//   if (startTime < 0) {
+//       startTime = timestamp;
+//   } else {
+//       progress = timestamp - startTime;
+//   }
 
-  // Do animation ...
-  if (progress < animationLength) {
-      requestAnimationFrame(doAnimation);
-  }
-}
+//   // Do animation ...
+//   if (progress < animationLength) {
+//       requestAnimationFrame(doAnimation);
+//   }
+// }
 
-// Start animation
-requestAnimationFrame(doAnimation);
-btn.click = doAnimation;
+// // Start animation
+// requestAnimationFrame(doAnimation);
+// btn.click = doAnimation;
 
 
+// <!-- <div class="container">
+
+// <div class="form">
+//     <input type="text" id="txt">
+//     <button type="submit" id="show">Show</button>
+// </div>
+// <div class="cans">
+    
+//     <canvas id="canvas" width="650" height="300" style="border: 5px solid coral; background-color: black;"></canvas>
+
+
+//     <canvas id="mycanvas" width="100" height="150" style="border: 1px solid red;"></canvas>
+//     <div class="shape"></div>
+
+//     <canvas id="myCanvas" width="400" height="200" style="border: 1px solid red;"></canvas>
+//     <div class="shape"></div>
+// </div>
+
+// <h1 id="output"></h1>
+
+// </div> -->
 
 
