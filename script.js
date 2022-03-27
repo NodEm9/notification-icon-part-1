@@ -20,33 +20,6 @@ const iconAtrrProperty = () => {
    'You have no new notification, ***check again in few hours***');
 }
 
-
-function notiDisplay() {
-    let newCard = createCard.cad;
-    /** 
-        If our card element has a text content and
-        is not empty, then we docorate it
-    **/
-    if(newCard !== null){
-        // card.textContent = 'You have no noitification'
-        card.style.width = '200px'
-        card.style.padding = '8px'
-        card.style.position = 'absolute'
-        card.style.background = 'purple'
-        card.style.color = '#fff'
-        card.style.zIndex = '5'
-        icon.textContent = card
-        card.style.right = '0'
-        card.style.top = '0'
-        card.style.marginTop = '33px'
-        card.style.marginRight = '38px'
-        card.style.transition = 'all 1s .5s ease-in-out'
-    }
-
-    return newCard
-  
-};
-
 function updateNotify() {
     return getNot(createNot)
 };
@@ -57,8 +30,6 @@ class Notification {
         this. mTime = mTime
         this.mType = mType
     }
-
-    // get message() {}
 }
 
 let createNot = new Notification('1', '', 'notification') //You have 1 new notification
