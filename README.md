@@ -1,7 +1,9 @@
 # Notification-icon-part-1
 
-## Introduction 
+## Documentation
+
 - This code create a notification icon.
+
 ### Set Attribute
 It sets the a tooltip **Atrribute**, a default notification message which will only changes when icon attribute is/sets to null or undefined in the iconAtrrProperty() function. It is then use in getNot() function to replace the undefined notification message.   
 
