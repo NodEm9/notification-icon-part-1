@@ -5,7 +5,6 @@ const icon1 = document.querySelector('.notifyIcon')
 let msgArrays = [];
 let notiIcon;
 
-
 const card = document.createElement('span')
 card.setAttribute('class', 'cards')
 icon.setAttribute('class', 'tooltip')
