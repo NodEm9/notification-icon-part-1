@@ -20,22 +20,28 @@ body {
     justify-content: center;
 }
 
-.notificatoin {
+.msg  {
+    margin: 0px;
+    width: auto;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.msg .notificatoin {
     position: relative;
     display: block;
-    margin: 50px;
-    width: 50px;
-    align-items: flex-end;
-    justify-content: baseline;
+    padding: 15px;
+    width: 10px;
 }
 
 .notify {
-    margin: 30px;
-    position: absolute;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    right: -1px;
-    width: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+    right: 1px;
+    width: auto;
     min-height: auto;
 }
 
@@ -53,6 +59,8 @@ img {
     right: 0;
     background: blue;
     border-radius: 5px;  
+    margin: 15px;
+    min-height: auto;
     text-align: center;
     flex: 1;
     transform: translate(8%, -30%);
@@ -69,9 +77,9 @@ img {
 .tooltip:hover::before {
     display: block;
     background: blue;
-    margin: 6px 12px;
+    margin: 21px 27px;
     border-radius: 5px;
-    width: 200px;
+    width: 140px;
     float: right;
     color: #fff;
 }
@@ -81,17 +89,10 @@ img {
     left: 0%;
 }
 
- .cards.open  { 
-    transform: rotate(90deg, 445deg) translate(-8px, -19px);
-    /* transition: all .5s .2s ease-in-out; */
-  
-}
-
 .icon1 {
     width: 30px;
     position: absolute;
     right: 0;
-    top: 0;
 }
 
 canvas {

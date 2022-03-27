@@ -8,7 +8,7 @@ let notiIcon;
 
 const card = document.createElement('span')
 card.setAttribute('class', 'cards')
-icon.setAttribute('class', ' tooltip')
+icon.setAttribute('class', 'tooltip')
 icon.setAttribute('data-position', 'bottom')
 
 const createCard = { cad: card }
