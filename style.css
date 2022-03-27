@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: auto;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.notificatoin {
+    position: relative;
+    display: block;
+    margin: 50px;
+    width: 50px;
+    align-items: flex-end;
+    justify-content: baseline;
+}
+
+.notify {
+    margin: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: -1px;
+    width: 400px;
+    min-height: auto;
+}
+
+#myForm {
+    margin: 20px; 
+}
+ 
+img {
+    margin-right: 15px;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    right: 0;
+    background: blue;
+    border-radius: 5px;  
+    text-align: center;
+    flex: 1;
+    transform: translate(8%, -30%);
+}
+
+.tooltip::before {
+    content: attr(data-tooltip);
+    position: relative;
+    padding: 6px 12px;
+    display: none;
+    top: -100%;
+}
+
+.tooltip:hover::before {
+    display: block;
+    background: blue;
+    margin: 6px 12px;
+    border-radius: 5px;
+    width: 200px;
+    float: right;
+    color: #fff;
+}
+
+.tootltip[data-position = 'bottom']::before {
+    top: 100%;
+    left: 0%;
+}
+
+ .cards.open  { 
+    transform: rotate(90deg, 445deg) translate(-8px, -19px);
+    /* transition: all .5s .2s ease-in-out; */
+  
+}
+
+.icon1 {
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+canvas {
+    margin: 0 auto;
+    padding: 35px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* #output {
+    text-align: center;
+    margin: 50px;
+} */
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    padding: 15px;
+
+}
+
+#txt {
+    padding: 5px;
+    width: 150px;
+}
+
+.userEntry {
+    position: absolute;
+    text-align: center;
+    /* transform: translate(280,500); */
+    margin:  65px;
+    z-index: 2;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    background: blue;
+    color: #fff;
+    border: none;
+    margin: 20px;
+}
