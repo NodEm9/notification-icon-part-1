@@ -14,10 +14,15 @@ body {
     flex-direction: column;
     position: relative;
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px;  
     width: 700px;
     align-items: center;
     justify-content: center;
+}
+
+section {
+    height: 50px;
+    margin-bottom: 20px;
 }
 
 .msg  {
@@ -57,13 +62,13 @@ img {
     position: relative;
     display: flex;
     right: 0;
-    background: blue;
+    /* background: blue; */
     border-radius: 5px;  
     margin: 15px;
     min-height: auto;
     text-align: center;
     flex: 1;
-    transform: translate(8%, -30%);
+    /* transform: translate(8%, -30%); */
 }
 
 .tooltip::before {
