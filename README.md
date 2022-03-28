@@ -19,7 +19,7 @@ This function calls both the iconAtrrProperty() and msgArrays. Both objects take
 
 ### myMethod
 
-The myMethod() function holds the hard coded notification messgae and makes it available in getNot() function that fires as notifiction icon is click. This is used to demostrate how it will work. Its setting getNot() as a parameter value which has also a parameter value of the hard coded message **msgArrays.createNot**
+The myMethod() function holds the hard coded notification messgae that is being pushed to msgArrays and makes it available in getNot() function that fires as notifiction icon is click. With this we can demonstrate a test of how the notification icon will work in end. Its setting getNot() as a parameter value which has also a parameter value of the hard coded message **msgArrays.createNot**
 
 
 ![Screenshot-3](https://user-images.githubusercontent.com/42060362/160288177-72c5f595-0032-4752-93a5-a450bda2249f.jpg)
