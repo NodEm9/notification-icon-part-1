@@ -27,13 +27,14 @@ function updateNotify() {
 };
 
 class Notification {
-        constructor(mType, message) {
+        constructor(mType, message, date) {
         this.mType = mType
         this.message = message
+        this.date = date
     }
 }
 
-let createNot = new Notification('notification', 'New offer!!! GET it Now!! before 30th of this month') //You have 1 new notification
+let createNot = new Notification('notification', 'New offer!!! hurry, GET it Now!!', new Date().toDateString()) //You have 1 new notification
 
 //GET MESSAGES: PUSH MESSAGE INTO THE msgArrays[] 
 const getNot = (incomingNot) => {
@@ -42,7 +43,7 @@ const getNot = (incomingNot) => {
     
     if(incomingNot !== undefined) incomingNot ? 
     icon.setAttribute('data-tooltip', createCard.cad.innerHTML = 
-    newMsg - 1 + ' ' +createNot.mType) :
+    newMsg - 1 + ' ' +createNot.mType+ ' ' +createNot.date) :
     icon.setAttribute('data-tooltip', createCard.cad.innerHTML = defaultNot);  
         console.log(createCard.cad.innerHTML);
         console.log({ Notification: msgArrays});
