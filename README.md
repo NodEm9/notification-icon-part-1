@@ -29,7 +29,7 @@ In part-2 I shall create a backend that will send notification message to the fr
 
 *Please feel free to study the code and let me know ways the code can be better improved*.
 
-*Thanks for reading throught*.
+*Thanks for reading through*.
 
   
  
