@@ -31,7 +31,7 @@ class Notification {
     }
 }
 
-const createNot = new Notification('notification', 'New offer!!! hurry, GET it Now!!', new Date().        toDateString()) //You have 1 new notification
+const createNot = new Notification('notification', 'New offer!!! hurry, GET it Now!!', new Date().        toDateString()) //You have 1 new notification 
 
 
 //GET MESSAGES: PUSH MESSAGE INTO THE msgArrays[] 
@@ -56,3 +56,4 @@ myMethod = (function (sProperty) {
 
 myMethod(getNot(JSON.stringify(msgArrays.push(createNot) - 1)));
 icon.addEventListener('click', updateNotify);
+ 
