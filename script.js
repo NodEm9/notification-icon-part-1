@@ -25,14 +25,13 @@ function updateNotify() {
 };
 
 class Notification {
-        constructor(id, mTime, mType) {
-        this.id = id
-        this. mTime = mTime
+        constructor(mType, message) {
         this.mType = mType
+        this.message = message
     }
 }
 
-let createNot = new Notification('1', '', 'notification') //You have 1 new notification
+let createNot = new Notification('notification', 'New offer!!! GET it Now!! before 30th of this month') //You have 1 new notification
 
 //GET MESSAGES: PUSH MESSAGE INTO THE msgArrays[] 
 const getNot = (incomingNot) => {
