@@ -5,7 +5,7 @@
 - This code create a notification icon.
 
 ### Set Attribute
-It sets the tooltip **Atrribute**, a default notification message which will only display when icon attribute is/sets to null or undefined in the getNot() function. It is then use in getNot() function to replace the undefined notification message.   
+It sets the **tooltip Atrribute**, a default notification message which will only display when icon attribute is/sets to null or undefined in the getNot() function. It is then use in getNot() function to replace the undefined notification message.   
 
 ![Screenshot-2](https://user-images.githubusercontent.com/42060362/160286844-16c7cc5a-009c-4807-88be-86c5475dcee0.jpg)
 
