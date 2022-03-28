@@ -1,14 +1,16 @@
-const icon = document.querySelector('.notify')
-icon.setAttribute('class', 'icon')
-const icon1 = document.querySelector('.notifyIcon')
-
 let msgArrays = [];
 let notiIcon;
 
-const card = document.createElement('span')
-card.setAttribute('class', 'cards')
+const icon = document.querySelector('.notify')
+icon.setAttribute('class', 'icon')
 icon.setAttribute('class', 'tooltip')
 icon.setAttribute('data-position', 'bottom')
+
+
+// const icon1 = document.querySelector('.notifyIcon')
+const card = document.createElement('span')
+card.setAttribute('class', 'cards')
+
 
 const createCard = { cad: card }
 createCard.cad.innerHTML = 'You have no new notification'
