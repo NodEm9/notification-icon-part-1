@@ -50,26 +50,9 @@ section {
     width: auto;
     min-height: auto;
 }
-
-#myForm {
-    margin: 20px; 
-}
  
 img {
     margin-right: 15px;
-}
-
-.cards {
-    position: relative;
-    display: flex;
-    right: 0;
-    /* background: blue; */
-    border-radius: 5px;  
-    margin: 15px;
-    min-height: auto;
-    text-align: center;
-    flex: 1;
-    /* transform: translate(8%, -30%); */
 }
 
 .tooltip::before {
@@ -99,46 +82,4 @@ img {
     width: 30px;
     position: absolute;
     right: 0;
-}
-
-canvas {
-    margin: 0 auto;
-    padding: 35px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* #output {
-    text-align: center;
-    margin: 50px;
-} */
-
-.form {
-    display: flex;
-    justify-content: space-around;
-    margin: 15px;
-    padding: 15px;
-
-}
-
-#txt {
-    padding: 5px;
-    width: 150px;
-}
-
-.userEntry {
-    position: absolute;
-    text-align: center;
-    /* transform: translate(280,500); */
-    margin:  65px;
-    z-index: 2;
-}
-
-button {
-    width: 150px;
-    padding: 10px;
-    background: blue;
-    color: #fff;
-    border: none;
-    margin: 20px;
 }
