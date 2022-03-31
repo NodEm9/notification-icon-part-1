@@ -25,6 +25,7 @@ class Notification {
 const createNot = new Notification() //You have 0 new notification 
 const create2Not = new Notification('', 'New offers!!, Hurry GET it Now!!!', new Date().toDateString()) //You have 1 new notification 
 
+//Set the 3 object's value for createNot and create2Not.mType 
 createNot.mType = 'notification'
 createNot.message = 'Notification message has been mutated'
 createNot.date =  new Date().toDateString()
@@ -58,6 +59,7 @@ const getNot = (incomingNot) => {
         icon.setAttribute('data-tooltip', createCard.cad.innerHTML = defaultNot)
 
         specCard.style.color = 'red'
+        specCard.style.float = 'left'
         specCard.textContent = newMsg 
    
     return incomingNot;
@@ -66,10 +68,7 @@ const getNot = (incomingNot) => {
 
 //Method have our default text and displays it before 
 //the button is click or before new notification is recieved
-myMethod = (function (sProperty) {
-    console.log(arguments.length > 0 ? this[sProperty] : this)
-}).bind(getNot());
-
+myMethod = (function () {}).bind(getNot());
 
 const updateNotify = () => getNot(createNot);
 icon.addEventListener('click', updateNotify);
