@@ -57,7 +57,7 @@ const getNot = (incomingNot) => {
         icon.setAttribute('data-tooltip', createCard.cad.innerHTML.replace = 
         newMsg  + ' ' +create2Not.mType+ ' ' + createNot.date+ ' ' +` Messag: ${createNot.message}`) : 
         icon.setAttribute('data-tooltip', createCard.cad.innerHTML = defaultNot)
-        
+
         specCard.textContent = newMsg 
         specCard.style.color = 'red'
     
@@ -70,5 +70,5 @@ const getNot = (incomingNot) => {
 //the button is click or before new notification is recieved
 myMethod = (function () {}).bind(getNot());
 
-const updateNotify = () => getNot(createNot);
-icon.addEventListener('click', updateNotify);
+const updateNot = () => getNot(createNot);
+icon.addEventListener('click', updateNot);
