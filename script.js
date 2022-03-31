@@ -57,10 +57,10 @@ const getNot = (incomingNot) => {
         icon.setAttribute('data-tooltip', createCard.cad.innerHTML.replace = 
         newMsg  + ' ' +create2Not.mType+ ' ' + createNot.date+ ' ' +` Messag: ${createNot.message}`) : 
         icon.setAttribute('data-tooltip', createCard.cad.innerHTML = defaultNot)
-
-        specCard.style.color = 'red'
-        specCard.style.float = 'left'
+        
         specCard.textContent = newMsg 
+        specCard.style.color = 'red'
+    
    
     return incomingNot;
 
