@@ -62,13 +62,13 @@ const getNot = (incomingNot) => {
         if ( incomingNot !== undefined ) incomingNot ? combine(incomingNot) : defaultNot;
 
         // let not = combine(incomingNot);
-        let notMsg = localStorage.setItem(`${newMsg}`, `${createNot.message}`)
+        let newNot = localStorage.setItem(`${newMsg}`, `${createNot.message}`)
         let notObj = []
-        const newNot = localStorage.getItem(notMsg)
-        notObj.push(newNot)
+        const notMsg = localStorage.getItem(newNot)
+        notObj.push(notMsg)
         
           console.log(notObj)
-          
+          // localStorage.clear();  
 
             specCard.textContent = newMsg 
             specCard.style.color = 'red'
