@@ -68,7 +68,7 @@ const getNot = (incomingNot) => {
         notObj.push(notMsg)
         
           console.log(notObj)
-          // localStorage.clear();  
+          localStorage.clear();  
 
             specCard.textContent = newMsg 
             specCard.style.color = 'red'
