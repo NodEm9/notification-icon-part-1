@@ -3,9 +3,9 @@ const msgArrays = [];
 //function which set default attribute value,
 //when notification is null or undefined
 const iconAtrrProperty = () => {
-    icon.setAttribute('data-tooltip', createCard.cad.innerText =
-        'You have no new notification');
+  icon.setAttribute('data-tooltip', createCard.cad.innerText = 'You have no new notification');
 }
+
 
 class Notification {
     constructor(mType, message, date) {
@@ -27,7 +27,7 @@ const create2Not = new Notification('', 'New offers!!, Hurry GET it Now!!!', new
 
 //Set the 3 object's value for createNot and create2Not.mType 
 createNot.mType = 'notification'
-createNot.message = 'Notification message has been mutated'
+createNot.message = "Hi Mr. Greg! You've got a new notification"
 createNot.date =  new Date().toDateString()
 create2Not.mType = 'new notifications'
 
@@ -46,24 +46,28 @@ createCard.cad.innerHTML = 'You have no new notification'
 
 //GET MESSAGES: PUSH MESSAGE INTO THE msgArrays[] 
 const getNot = (incomingNot) => {
-    const defaultNot = iconAtrrProperty(incomingNot)
-    let newMsg = msgArrays.push(incomingNot) - 1;
-    const specCard = document.querySelector('.notifyCard2');
-    console.log(incomingNot)
+        const defaultNot = iconAtrrProperty();
+        let newMsg = msgArrays.push(incomingNot) - 1;
+        const specCard = document.querySelector('.notifyCard2');
 
-    //Check if incomingNot is undefined and return default text and 
-    //if it is defined it means we have new message then return the message
-    if ( incomingNot !== undefined ) incomingNot ?
-        icon.setAttribute('data-tooltip', createCard.cad.innerHTML.replace = 
-        newMsg  + ' ' +create2Not.mType+ ' ' + createNot.date+ ' ' +` Messag: ${createNot.message}`) : 
-        icon.setAttribute('data-tooltip', createCard.cad.innerHTML = defaultNot)
+        let combine = function(msg) {
+            if(msg) {
+              createCard.cad.innerHTML.replace = icon.setAttribute('data-tooltip',
+              newMsg  + ' ' +create2Not.mType+ ' ' + createNot.date+ ' ' +` Messag: ${createNot.message}`) 
+            }
+          };
 
-        specCard.textContent = newMsg 
-        specCard.style.color = 'red'
-    
-   
-    return incomingNot;
+        //Check if incomingNot is undefined and return default text and 
+        //if it is defined it means we have new message then return the message
+        if ( incomingNot !== undefined ) incomingNot ? combine(incomingNot) : defaultNot;
 
+            specCard.textContent = newMsg 
+            specCard.style.color = 'red'
+            specCard.style.padding = "16px";
+            specCard.style.top = "left";
+            specCard.style.transform = "translate(-40px, -19px)";
+            specCard.style.position = "absolute";
+            icon.appendChild(specCard)
 };
 
 //Method have our default text and displays it before 
