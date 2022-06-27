@@ -1,6 +1,6 @@
 # Notification-icon-part-1
 
-## Documentation
+## An example of Vanilla JS Toast 
 
 - This code create a notification icon.
 
