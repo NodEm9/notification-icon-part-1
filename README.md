@@ -24,16 +24,5 @@ The myMethod() function holds the hard coded notification messgae that is being 
 
 ![Screenshot-3](https://user-images.githubusercontent.com/42060362/160288177-72c5f595-0032-4752-93a5-a450bda2249f.jpg)
 
-# Note
-In part-2 I shall create a backend that will send notification message to the frontend icon and alert it instead of the hard coded which display messages when it is clicked.
-
-*Please feel free to study the code and let me know ways the code can be better improved*.
-
-*Thanks for reading through*.
-
-  
- 
-### Author:
-*Emmanuel Nod*
 
 
